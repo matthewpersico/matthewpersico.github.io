@@ -1,3 +1,3 @@
-Welcome to my latest home on the web for various musings. 
+.htmlWelcome to my latest home on the web for various musings. 
 
-[Food](food/index)
+[Food](food/index.html)
