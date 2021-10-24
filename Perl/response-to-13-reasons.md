@@ -472,14 +472,14 @@ TEMPO
 
 What it comes down to is that having regular expressions built into the
 language leads to them being used much more than in any other language, and
-certainly, that increases the number of Jurassic[fn1] uses.
+certainly, that increases the number of Jurassic[^1] uses.
 
 But the basic difference here is that, as an add-on, regexps in most other
 languages require explicit function calls to get access to the results, whereas
 in Perl you get those results with symbols. The actual regular expression
 languages themselves are pretty much equivalent. So it's a matter of taste. For
 me, I prefer brevity and the ability to write expressions to get at the results
-without all those function calls all over the place[fn2].
+without all those function calls all over the place[^2].
 
 ## Less Searchability
 
@@ -741,7 +741,7 @@ untrained people could use it at all is a testament to its utility.
 I hope that I've been able to explain and enlighten. Perl may not be as popular
 as it once was, but it's still as good as it ever was.
 
-[fn1] "Just because we can, doesn't mean we should."
+[^1]: "Just because we can, doesn't mean we should."
 
-[fn2] Yeah. Pretty ironic; I know. The Python folks would say, "We'd like to
+[^2]: Yeah. Pretty ironic; I know. The Python folks would say, "We'd like to
 get at our data without all that punctuation getting in the way."
