@@ -14,7 +14,7 @@ completely confuse a new user of the language.
 So, what I've finally settled on doing is just explaining why Perl is the way
 it is.  If after this explanation, you are unconvinced and you still don't like
 Perl, so be it.  But at least, instead of saying "Perl sucks", you'll be able
-to say "Ah, now I see *why* Perl does this. It still sucks."
+to say "Ah, now I see *why* Perl does this. But it still sucks."
 
 Three notes before we begin:
 
@@ -25,10 +25,11 @@ of The Bronx...
 article; it's simply the most similar language I know to be able compare to and
 contrast against.
 
-* Quite a bit of the discussion about language and parts of speech will be the
-words of Damian Conway, pretty much verbatim. Damian was kind enough to review
-this before publishing and provided significant corrections and
-expansions to the topic. I'll be happy to give him his credit where it is due.
+* Quite a bit of the discussion about language and parts of speech in the
+section on sigils will be the words of Damian Conway, pretty much
+verbatim. Damian was kind enough to review this before publishing and provided
+significant corrections and expansions to the topic. I'll be happy to give him
+his credit where it is due.
 
 ## Weird variable access
 
@@ -37,13 +38,14 @@ expansions to the topic. I'll be happy to give him his credit where it is due.
 of variable. And I need to do it every time I access the variable."
 
 ### Discussion
-Addressing these concerns in reverse order, well, yeah, it's not a typed
-language; of course you are going to need to be consistent in the syntax of the
-language across all references.
+Addressing these concerns in reverse order, well, yes, Perl is not a typed
+language; you are going to need to be consistent in the syntax of the language
+across all references.
 
-As for sigils (that's the official name for $, @, and %), they serve *two*
-purposes: they not only tell the interpreter what kind of variable it is
-dealing with, they also tell *you* what kind of variable you are dealing with.
+As for sigils (that's the official name for `$`, `@`, and `%`[^sigil-types]),
+they serve *two* purposes: they not only tell the interpreter what kind of
+variable it is dealing with, they also tell *you* what kind of variable you are
+dealing with.
 
 When I see `foo` in most languages, I have *no clue* what type of data that
 is. None. Not without scrolling back through the code to find a prior usage or
@@ -62,13 +64,13 @@ it's more information that we had without the sigil.
 * `%foo` is a dictionary. We call it a 'hash', after the hashing function for
 the keys. If you squint hard enough, the '%' looks like a stylized 'h'. Also,
 you could think of it as a stylized key/value representation; but I
-digress.[^1]
+digress.[^hash-stylization]
 
 What you must remember is that the creator of Perl, Larry Wall, was not a
 CompSci major; he was a linguist. Therefore, you are going to see punctuation
 used to provide information. You are going to get what you initially
 perceive to be strange changes in behavior of these sigils, but are actually
-expressions of "declensions, in context".
+expressions of "declensions, in context"[^declensions].
 
 For example, the difference between `$thing` and `@thing` is the same as the
 difference between "this thing" and "these things". In English we decline
@@ -83,10 +85,7 @@ The meaning of each sigil is always:
     `@`- You're going to get back a list of zero or more values
     `%`- You're going to get back a list of zero or more labelled values
 
-"context"; words mean different things in different contexts in human
-languages. That concept extends to Perl[^2].
-
-In this context, the sigil indicates data type of the variable.
+Keep this in mind as we move to the next quote.
 
 ### Quote
 
@@ -102,9 +101,11 @@ Perl experts created a language with *invariant* sigils. Maybe that's telling;
 I don't know. But Perl's invariance is not as confusing as people make it out
 to be. It is, in fact, rather useful.
 
-Simply put, in the context of an indexed access to a portion of an array or
-hash, the sigil tells you what type of data to expect in return after applying
-any referencing information; in other words, it's a "cast". Examples:
+As stated above, a sigil tells you "what you're going to get back". When
+applied to a variable, the sigil implies the type of the variable.  In the
+context of an indexed access to a portion of an array or hash, the sigil tells
+you what type of data to expect in return after applying any referencing
+information; in other words, it's a "cast". Examples:
 
 To access the 6th element of the array `@foo=(10, 20, 30, 40, 50, 60, 70, 80)`, you write
 `$foo[5]` (zero-based arrays). Why the '$' and not the '@'? Well:
@@ -237,6 +238,11 @@ You not constrained to an ordered list of indicies. The same goes for hashes:
 
 It's all internally consistent.
 
+Sigils also have other uses, which we consider to be advantages. See
+[On Sigils](https://www.perl.com/article/on-sigils/),
+by [David Farrell](https://www.perl.com/authors/david-farrell/) for further information.
+
+
 ## Too much implicit code
 ## Lacking readability
 
@@ -252,10 +258,10 @@ while (<>) {
 
 Well that's a pretty short snippet. But yes, it is idiomatic; remember, Perl
 was created by a linguist. There will be idioms all over the place. You learn
-them and move on.
+to recognize them in older code and move on.
 
-Truth be told, however, this idiom is frowned upon in new code. It is
-recommended[^3] to use:
+However, this idiom is frowned upon in new code. It is
+recommended[^modern-perl] to use:
 
 ```
 while (my $nextline = readline()) {
@@ -272,23 +278,14 @@ versus:
     while you can read in the next line, print that next line
 
 ## No clear parameter list
-## Weirdly passing arrays to function
 
-### Discussion
+### Quote
 
-In a rather large project, parameter declarations are important to prevent all
-sorts of errors that can result from mismatched parameter lists.
+While declaring a function (called subroutine in Perl), it does not specify the
+parameter list. You will always pass a list of arguments and the function need
+to extract them from an array.
 
-Perl, despite rumors to the contrary, *does* have a method to specify function
-parameter lists, despite their long-overdue-for-removal experimental status. It
-has been available since Perl 5.20, released over seven years ago. You can read
-about it here: (https://perldoc.perl.org/perlsub#Signatures).
-
-If you are paranoid about using something marked "experimental", there are a
-number of modules on CPAN that you can use. A good reference would be
-https://phoenixtrap.com/2021/01/27/better-perl-with-subroutine-signatures-and-type-validation/.
-
-But let's discuss the example. This example is not canonical. This is not 'Perlish':
+### Code
 
 ```
 sub func1 {
@@ -301,7 +298,20 @@ sub func1 {
 func1(1, 2, 3);
 ```
 
-A seasoned 'Perler' would write:
+### Discussion
+
+Perl, despite rumors to the contrary, *does* have a method to specify parameter
+lists, despite their long-overdue-for-removal-status of
+"experimental". Parameter lists have been available since Perl 5.20, released
+over seven years ago. You can read about them here:
+(https://perldoc.perl.org/perlsub#Signatures).
+
+If you are paranoid about using something marked "experimental", there are a
+number of modules on CPAN that you can use instead. A good reference would be
+https://phoenixtrap.com/2021/01/27/better-perl-with-subroutine-signatures-and-type-validation/.
+
+But let's discuss the code example. This example is not canonical.  A seasoned
+'Perler' would write:
 
 ```
 sub func1 {
@@ -309,7 +319,8 @@ sub func1 {
     // do something with the variables
 }
 ```
-But flattening makes it harder to pass arrays intact, no?
+
+## Weirdly passing arrays to function
 
 ### Quote:
 
@@ -340,6 +351,7 @@ The second problem is that, yes, Perl will flatten arrays by default. So, if
 you want to pass them as separate arrays, pass references.
 
 In sum:
+
 ```
 sub func1 {
     for (@_) {
@@ -364,6 +376,7 @@ instead. Alas! The actual worst case worse than what I anticipated. It prints
 both keys and values.
 
 ### Code
+
 ```
 sub func1 { print join ', ', @_; }
 
@@ -427,18 +440,16 @@ Let's unpack some of that:
 * "useful when you know them, to be honest."  As with most things.
 
 * "it automatically assigns some variables like $&, $`, $' etc." So what? If
-  you don't need them, you don't use them. I can honestly tell you that in all
-  my years of Perl-ing, I rarely use these; at this moment I need to look them
-  up to even figure out what they mean.
+you don't need them, you don't use them. I can honestly tell you that in all my
+years of Perl-ing, I rarely use these; at this moment I need to look them up to
+even figure out what they mean.
 
 Let's be honest; the main reason regexps have gotten a bad rep is that their
 dense syntax is lumped in with Perl's syntax, so now both are declared "bad".
 
-But I say no; Perl and its sister language Raku (formerly Perl6) are the only
-languages I know that I believe get it right. Why? Because Perl's regular
-expressions are *built in*. People complain that function parameters are not
-built into Perl, but having regexps built in is considered harmful. Really?
-Let's have a look:
+But I say no; Perl and Raku are the only languages I know that I believe get it
+right. Why? Because Perl's regular expressions are *built in*. Is this a "Godd
+Thing"? Let's have a look:
 
 ```python
 import re
@@ -456,14 +467,14 @@ TEMPO
 
 What it comes down to is that having regular expressions built into the
 language leads to them being used much more than in any other language, and
-certainly, that increases the number of Jurassic[^4] uses.
+certainly, that increases the number of Jurassic[^Jurassic] uses.
 
 But the basic difference here is that, as an add-on, regexps in most other
 languages require explicit function calls to get access to the results, whereas
 in Perl you get those results with symbols. The actual regular expression
 languages themselves are pretty much equivalent. So it's a matter of taste. For
 me, I prefer brevity and the ability to write expressions to get at the results
-without all those function calls all over the place[^5].
+without all those function calls all over the place[^ironic].
 
 ## Less Searchability
 
@@ -518,10 +529,10 @@ $ perldoc -v '$`'
             Mnemonic: "`" often precedes a quoted string.
 ```
 
-Bingo. No Google needed. If `perldoc` is not installed on your machine, use
+No Google needed. If `perldoc` is not installed on your machine, use
 `https://perldoc.perl.org/`. Typing "$\`" into the search box at
 `https://perldoc.perl.org/` immediately yields
-https://perldoc.perl.org/variables/$%60.
+https://perldoc.perl.org/variables/$%60 .
 
 We know that there is a 'pythonic' way of doing things. Well one of the
 'perlish' ways of doing things is to use the provided documentation instead of
@@ -541,7 +552,8 @@ There is also a visual Perl debugger written *in Perl*, requiring nothing but
 Perl and the Tk module (tkinter is the Python equivalent): https://metacpan.org/pod/Devel::ptkdb
 
 There are plenty of visual debuggers for Python built into IDEs, but I have not
-yet seen a pure Python/tkinter one.
+yet seen a pure Python/tkinter one. Having one built into the IDE reduces the
+chances of being able to debug an issue in a production setting.
 
 ## Too much implicit error handling
 
@@ -581,8 +593,8 @@ other at all.  So yes, I could declare triumph here and say "use strict and use
 warnings" to catch those kinds of errors in real code. But I'd be hiding a
 different issue.
 
-You'll noticed I used 'ar' and not 'a' for the variable name. That shouldn't
-make a difference, right?  Well...
+You'll noticed I used `ar` and not `a` for the variable names. That couldn't
+*possibly* make a difference, right?  Well...
 
 ```
 $ cat tmieh2.pl
@@ -615,18 +627,19 @@ my $b if you want to be able to use them in the sort() comparison block or
 function.
 ```
 
-`$a` and `$b` are effectively already pre-declared. That's why we didn't get a
-'not defined' error to stop execution. In addition to the admonition to not
-lexicallize them (don't say `my $a` or `my $b` anywhere), you should simply not
-use either outside of a `sort` context.
+`$a` and `$b` are effectively already pre-declared everywhere. That's why we
+didn't get a 'not defined' error to stop execution. In addition to the
+admonition to not lexicallize them (don't write `my $a` or `my $b` anywhere), you
+should simply not use either outside of a `sort` context.
 
 So here, we have a confusion in the difference between `$a` and `@a` which is
-made even cloudier by the specialness of `$a`. I'll need to concede that this
-is the kind of thing that would frustrate a beginner. I mean, it took me a
-minute or two of head scratching before I remembered that `$a` was "special".
+made even cloudier by the specialness of `$a`. I must concede that this is the
+kind of thing that would frustrate a beginner; it took me a minute or two of
+head scratching before I remembered that `$a` was "special", and, as stated
+above. I've been doing this since 1997.
 
 But that's why we provide `strict` and `warnings` and that's why we say to use
-descriptive names; that's what `foo` and `bar` are for.
+descriptive names; use `foo` and `bar` in examples.
 
 ## Inconsistent behavior
 
@@ -656,7 +669,8 @@ value. But, it will not do such if your map's key coincides with a function.
 
 ### Discussion
 
-Not exactly. First of all, let's rewrite the example in an equivalent form:
+Not exactly. First of all, let's rewrite the example in an equivalent form in
+order to explain what's really happening:
 
 ```
 %m1 = ('one', 1);
@@ -673,15 +687,16 @@ You see, `=>` is called a 'fat comma' and has two properties:
   quoted. Notice the example with the fat comma does not have quoted lefthand
   values.
 
-With it being rewritten, we can see what is happening here:
+So by replacing `=>` with `,` and explicitly quoting the left hand side, we can
+explain what is happening here:
 
 * `%m1` has a key of the string `'one'` and a value the integer `1`.
 
 * `%m2` has a key of the string `'1'` and a value of the function call `one()`,
-  which is `'two'`. Yes, you don't need the parens to invoke a function call.
+which is `'two'`. Yes, you don't need the parens to invoke a function call.
 
-The stringification of the left hand side is very convenient when typing out a
-long named argument list or a very large hash assignment.
+The `one` on the left of the comma is a string. The `one` on the right of the
+comma is a function call.
 
 ## Poor IDE support
 
@@ -725,21 +740,27 @@ untrained people could use it at all is a testament to its utility.
 I hope that I've been able to explain and enlighten. Perl may not be as popular
 as it once was, but it's still as good as it ever was.
 
-[^1]: Neither the 'stylized h' or the 'key/value' comparisons are mine. I am
+[^hash-stylization]: Neither the 'stylized h' or the 'key/value' comparisons are mine. I am
 not sure where I read the former, but a form of the latter can be found on
 page 11 of Programming Perl, Fourth Edition.
 
-[^2]: The whole "declensions" explanation was Damian's rework of my incomplete
+[^declensions]: The whole "declensions" explanation is Damian's rework of my incomplete
 "context" discussion. Thank you!
 
-[^3]: From Damian's review and Chapter 1 of Modern Perl. In fact, you would do
-yourself a great service to read this book if you are interested in or
+[^modern-perl]: From Damian's review and Chapter 1 of Modern Perl. In fact, you
+would do yourself a great service to read this book if you are interested in or
 researching Perl. It is available from the usual paid outlets but, it is also
-legally freely available on the Internet. In fact, you can find the source for
-the book at https://github.com/chromatic/modern_perl_book, so that you can
-clone and build your own copy.
+legally freely available on the Internet, mostly in PDF form; be sure to get
+version 4. In fact, you can find the source for the book at
+https://github.com/chromatic/modern_perl_book, so that you can clone and build
+your own copy. Using Perl utilities, of course. :-)
 
-[^4]: "Just because we can, doesn't mean we should."
+[^jurassic]: "Just because we can, doesn't mean we should."
 
-[^5]: Yeah. Pretty ironic; I know. The Python folks would say, "We'd like to
+[^ironic]: Yeah. Pretty ironic; I know. The Python folks would say, "We'd like to
 get at our data without all that punctuation getting in the way."
+
+[^sigil-types]; There are actually five sigils; the three aforementioned ones
+plus `&`, which is used with subroutines in order to take a reference to them,
+and `*`, a `typeglob` that has mothing to do with file globbing and whose
+purpose is way beyond the scope of this article.
