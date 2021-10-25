@@ -16,14 +16,19 @@ it is.  If after this explanation, you are unconvinced and you still don't like
 Perl, so be it.  But at least, instead of saying "Perl sucks", you'll be able
 to say "Ah, now I see *why* Perl does this. It still sucks."
 
-Two notes before we begin:
+Three notes before we begin:
 
 * There may still be a bit of snark in what follows; you can take the boy out
 of The Bronx...
 
-* And although I am using Python as counterpoint, this is not an anti-Python
+* Although I am using Python as counterpoint, this is not an anti-Python
 article; it's simply the most similar language I know to be able compare to and
 contrast against.
+
+* Quite a bit of the discussion about language and parts of speech will be the
+words of Damian Conway, pretty much verbatim. Damian was kind enough to review
+this before publishing and provided significant corrections and
+expansions to the topic. I'll be happy to give him his credit where it is due.
 
 ## Weird variable access
 
@@ -46,25 +51,42 @@ definition. Not without hovering the cursor in an IDE.
 
 In Perl:
 
-* `$foo` is a single value. String, number, reference. Now, that begs the
-question "reference to what", which puts us back in the "scrolling and
-hovering" lookup phase, but it's more information that we had without the
-sigil.
+* `$foo` is a single value, referred to as a 'scalar'. You can think of '$' as
+a stylized 's' in the word 'scalar'.  That value is typically a string or a
+number, but can also be a reference. Now, that raises the question "reference
+to what", which puts us back in the "scrolling and hovering" lookup phase, but
+it's more information that we had without the sigil.
 
 * `@foo` is an array. '@' kind of looks like an 'a'.
 
 * `%foo` is a dictionary. We call it a 'hash', after the hashing function for
 the keys. If you squint hard enough, the '%' looks like a stylized 'h'. Also,
-you could think of it as a stylized key/value representation; but I digress.
+you could think of it as a stylized key/value representation; but I
+digress.[^1]
 
 What you must remember is that the creator of Perl, Larry Wall, was not a
 CompSci major; he was a linguist. Therefore, you are going to see punctuation
-used to provide information and you are going to get what you initially
-perceive to be strange changes in behavior, but are actually expressions of
-"context"; words mean different things in different contexts in human
-languages. That concept extends to Perl.
+used to provide information. You are going to get what you initially
+perceive to be strange changes in behavior of these sigils, but are actually
+expressions of "declensions, in context".
 
-In this context, the sigil indicates data type.
+For example, the difference between `$thing` and `@thing` is the same as the
+difference between "this thing" and "these things". In English we decline
+both the demonstrative ("this" ➝ "these") and the noun ("thing" ➝ "things").
+In Perl, we just decline the sigil.
+
+Perl uses these declinations to specify "what you're going to get back"
+whenever you look up the value(s) contained in a variable.
+The meaning of each sigil is always:
+
+    `$`- You're going to get back a single value
+    `@`- You're going to get back a list of zero or more values
+    `%`- You're going to get back a list of zero or more labelled values
+
+"context"; words mean different things in different contexts in human
+languages. That concept extends to Perl[^2].
+
+In this context, the sigil indicates data type of the variable.
 
 ### Quote
 
@@ -103,7 +125,7 @@ returning a single value. If we wanted to return the entire `@foo` array:
    @   foo
    ^    ^
    |    variable name
-   result is the array, in the form of a list (10, 20, 30, 40, 50, 60, 70, 80)
+   result is a list (10, 20, 30, 40, 50, 60, 70, 80)
 ```
 
 Notice how a cast devolves into the simple regular variable access. It may be
@@ -126,7 +148,11 @@ For the entire hash:
    %   foo
    ^    ^
    |    variable name
-   result is the hash, in the form of a list ('a', 1, 'b', 2, 'c', 3)
+   result is a list of labelled (keyed) values: ('a', 1, 'b', 2, 'c', 3)
+                                                  ^       ^       ^
+                                                  |_______|_______|
+                                                          |
+                                                   labels or keys
 ```
 
 Again, the notice how the cast devolves into the simple regular variable
@@ -228,6 +254,23 @@ Well that's a pretty short snippet. But yes, it is idiomatic; remember, Perl
 was created by a linguist. There will be idioms all over the place. You learn
 them and move on.
 
+Truth be told, however, this idiom is frowned upon in new code. It is
+recommended[^3] to use:
+
+```
+while (my $nextline = readline()) {
+    print $nextline;
+}
+```
+
+Linguistically, these two versions are stylistically equivalent to:
+
+    while there's input, print it
+
+versus:
+
+    while you can read in the next line, print that next line
+
 ## No clear parameter list
 ## Weirdly passing arrays to function
 
@@ -236,11 +279,10 @@ them and move on.
 In a rather large project, parameter declarations are important to prevent all
 sorts of errors that can result from mismatched parameter lists.
 
-Perl *technically* has no official core way to specify a parameter
-list. However, there is an implementation documented here:
-(https://perldoc.perl.org/perlsub#Signatures) that has been in Perl since
-version 5.20. It is marked as "experimental", but it is unlikely to be modified
-at this point.
+Perl, despite rumors to the contrary, *does* have a method to specify function
+parameter lists, despite their long-overdue-for-removal experimental status. It
+has been available since Perl 5.20, released over seven years ago. You can read
+about it here: (https://perldoc.perl.org/perlsub#Signatures).
 
 If you are paranoid about using something marked "experimental", there are a
 number of modules on CPAN that you can use. A good reference would be
@@ -267,65 +309,6 @@ sub func1 {
     // do something with the variables
 }
 ```
-
-Presumably you would use more descriptive names than just 'x', 'y' and 'z'. And
-if you are going to have more than three params, you should probably name them:
-
-```
-sub func1 {
-    my %args = (
-        start => undef,
-        length => undef,
-        step => 'a default value',
-        reverse => 0,
-        @_
-        );
-    for (my $i=$args{'start'};
-         $i < $args{'length'};
-         $i += $args{'step'} ) {
-    ...
-    }
-    if ( $args{'reverse'} ) {
-    ...
-    }
-}
-```
-
-Yes, the statement that assigns `%args` looks weird. Just remember:
-
-* a  parenthesized set of values is a list.
-
-* A list is assigned to a hash in key/value pairs.
-
-* Keys are unique in a hash, so that multiple assignments to the same hash
-  ovewrite the value. Last one in wins.
-
-So, we create a list consisting of the expected params with default values,
-followed by the actual params (`@_` is where Perl puts function params,
-localized to each function). Any key value pairs in `@_` overwrite the
-defaults. The defaults tell you what params the function takes. And we assign
-the list to a hash.
-
-So, why are we copying these params in the first place? There are two reasons:
-
-The first is for clarity. Descriptive variable names are easier to grok than
-`$_[0]` (remember, `_` is the name, `@` says it's an array, `$` on an index
-expression says we are getting a scalar back). And copying to a hash is the
-only way to use `@_` in a named parameters mode.
-
-But the second reason for copying is that `@_` is not a copy of the values from
-the function call; it is an *alias* to those params. That means if you change
-the value of `$_[x]` then you have changed it *in the caller*. Sometimes, you
-will see, in small or hot functions, that the `$_[x]` form is used so as to not
-waste time copying data. That works fine, until someone decides to take
-advantage of the aliasing and modify the data in the function, and then someone
-else comes along, doesn't read the docs, and passes in a constant to the
-function instead of a variable. If you use the `$_[x]` form, you have forced
-your params to be read-only. This is probably what you want and expect 99.9% of
-the time anyway.
-
-So we can have named params and default params. Nice that Perl flattens lists.
-
 But flattening makes it harder to pass arrays intact, no?
 
 ### Quote:
@@ -451,10 +434,11 @@ Let's unpack some of that:
 Let's be honest; the main reason regexps have gotten a bad rep is that their
 dense syntax is lumped in with Perl's syntax, so now both are declared "bad".
 
-But I say no; Perl is the only language I know that gets it right. Why? Because
-Perl's regular expressions are *built in*. People complain that function
-parameters are not built into Perl, but having regexps built in is considered
-harmful. Really? Let's have a look:
+But I say no; Perl and its sister language Raku (formerly Perl6) are the only
+languages I know that I believe get it right. Why? Because Perl's regular
+expressions are *built in*. People complain that function parameters are not
+built into Perl, but having regexps built in is considered harmful. Really?
+Let's have a look:
 
 ```python
 import re
@@ -472,14 +456,14 @@ TEMPO
 
 What it comes down to is that having regular expressions built into the
 language leads to them being used much more than in any other language, and
-certainly, that increases the number of Jurassic[^1] uses.
+certainly, that increases the number of Jurassic[^4] uses.
 
 But the basic difference here is that, as an add-on, regexps in most other
 languages require explicit function calls to get access to the results, whereas
 in Perl you get those results with symbols. The actual regular expression
 languages themselves are pretty much equivalent. So it's a matter of taste. For
 me, I prefer brevity and the ability to write expressions to get at the results
-without all those function calls all over the place[^2].
+without all those function calls all over the place[^5].
 
 ## Less Searchability
 
@@ -741,7 +725,21 @@ untrained people could use it at all is a testament to its utility.
 I hope that I've been able to explain and enlighten. Perl may not be as popular
 as it once was, but it's still as good as it ever was.
 
-[^1]: "Just because we can, doesn't mean we should."
+[^1]: Neither the 'stylized h' or the 'key/value' comparisons are mine. I am
+not sure where I read the former, but a form of the latter can be found on
+page 11 of Programming Perl, Fourth Edition.
 
-[^2]: Yeah. Pretty ironic; I know. The Python folks would say, "We'd like to
+[^2]: The whole "declensions" explanation was Damian's rework of my incomplete
+"context" discussion. Thank you!
+
+[^3]: From Damian's review and Chapter 1 of Modern Perl. In fact, you would do
+yourself a great service to read this book if you are interested in or
+researching Perl. It is available from the usual paid outlets but, it is also
+legally freely available on the Internet. In fact, you can find the source for
+the book at https://github.com/chromatic/modern_perl_book, so that you can
+clone and build your own copy.
+
+[^4]: "Just because we can, doesn't mean we should."
+
+[^5]: Yeah. Pretty ironic; I know. The Python folks would say, "We'd like to
 get at our data without all that punctuation getting in the way."
