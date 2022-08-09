@@ -1,3 +1,8 @@
+---
+layout: post
+comments: true
+title:  "'Diet' is a Four Letter Word"
+---
 # "Diet" is a Four Letter Word
 
 Remember George Carlin's “Seven Dirty Words” (SDWs)? The ones you can’t say on TV? Ever?
