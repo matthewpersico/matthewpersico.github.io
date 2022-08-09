@@ -1,4 +1,4 @@
-# Falling off the Wagon...and Getting Back on Board 
+# Falling off the Wagon...and Getting Back on Board
 
 Yep, I fell off the wagon. After over a month of strict accounting for all the food I put into my body, I went on a food bender these past two days. Double portion of salmon for dinner. A bit too many fruits after dinner. Then a hearty Irish Stew for lunch with friends the next day, followed by more of too much fruit after dinner followed by 270 calories of Italian cookies and a chicken sandwich at 11:30pm. Ugh.
 
@@ -19,3 +19,5 @@ But when I fail to keep my goal (size 38) in the forefront, when I am left alone
 Or maybe, let's just call me a "live to eat" person, not an "eat to live" person. It's wired into my culture, upbringing, DNA. I can accept that fact as long as I don't allow it to take over my entire life. I'll be a calorie counter until the day I die. Ok. That's a small price to pay to extend that day much further into the future.
 
 The bottom line is that I broke form for a day or so. Guess what? I'm not dead. I'm not 277 pounds again. I'm not appreciably different than the guy two days ago that was doing well with his quest to eat better. I am, however, still very different that the guy who was 277 at the start of this process with all those bad habits and no clue. So, I am relaxed. One day will not kill you. Do not be discouraged by an off day. "Pick yourself up, dust yourself off, start all over again.
+
+[up](..) [home](../..)

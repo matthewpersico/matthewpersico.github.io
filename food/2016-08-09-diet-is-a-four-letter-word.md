@@ -30,3 +30,5 @@ Now, it helps if you're OCD/fanatical about counting EVERY SINGLE THING YOU EAT.
 And you must be honest with yourself, Not counting that cake because it's Saturday is a nice joke, but it's not going to get you back into your favorite jeans any sooner.
 
 So, if you are looking in the mirror and you are not happy with the shape that you see, don't diet. Start counting.
+
+[up](..) [home](../..)
