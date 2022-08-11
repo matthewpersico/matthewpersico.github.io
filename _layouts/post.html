@@ -1,9 +1,7 @@
----
----
+<!doctype html>
+{% include layout_preamble.html %}
 {% include navigation.html %}
-
 <h1>{{ page.title }}</h1>
-
 <p>
   {{ page.date | date_to_string }}
   {% assign topic = site.topics | where: 'name', page.topic | first %}
@@ -11,5 +9,5 @@
     - <a href="{{ topic.url }}">{{ topic.name }}</a>
   {% endif %}
 </p>
-
 {{ content }}
+{% include layout_postamble.html %}
