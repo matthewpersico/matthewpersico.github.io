@@ -18,9 +18,10 @@ defaults:
     values:
       layout: "default"
 
+remote_theme: pages-themes/midnight@v0.2.0
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-theme: jekyll-theme-midnight
+  - jekyll-remote-theme
