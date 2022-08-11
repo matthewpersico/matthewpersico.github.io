@@ -1,8 +1,6 @@
 ---
 topic: Food
 ---
-# Three Little Numbers
-
 If you follow me on [Facebook](https://www.facebook.com/matthew.persico) you may
 be wondering what's up with all the
 [Strava](https://www.facebook.com/1538859698/posts/pfbid0pG3fRH6v1oDaV4xmRATfz8WusqQHhRxSMS5jwdp2tB42BNi1LzUEZ2DK9nD7dfRsl/?d=n)
