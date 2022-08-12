@@ -54,8 +54,8 @@ Karen: "So, after six and a half years, you're still not allowed to have a drink
 Leo: "The problem is I don't want a drink; I want 10 drinks."
 
 And that resonated with me: My name is Matthew Persico and I am a
-["foodaholic"](https://en.wikipedia.org/wiki/Food_addiction). When you want a
-cookie to take a cookie; I take a half sleeve. You get a slice of pizza, I eat
+["foodaholic"](https://en.wikipedia.org/wiki/Food_addiction). You see, When you want a
+cookie, you take *a* cookie; I take a half sleeve. While you get a slice of pizza, I eat
 three. You have a dish of pasta, I get a bowl, go back for seconds, and grab
 another spoonful as I am putting it into the fridge.
 
@@ -67,10 +67,11 @@ Trek, First commercial: the aforementioned half-sleeve of cookies. Next break,
 fruit. Next break, peanut butter and jelly sandwich. Next break, crackers. Next
 break, ice cream. And on, and on, and on.
 
-I do not mean to belittle anyone who has an actual medical diagnosis of
-addition; I am not medically classified and I am not a doctor. But if you
-cannot control your intake and you do your worst out of sight, that sounds to
-me like an addiction, no?
+I do not mean to belittle anyone or minimize the issues and problems of anyone
+who has an actual medical diagnosis of addition; I am not medically qualified
+to make such diagnoses. But if you cannot control your intake of a substance
+and you do your worst consumption out of sight, that sounds to me like an
+addiction, no?
 
 So, what do you do? You cannot stop eating, right? Of course, but look at
 alcoholism: you can still drink, just not alcohol. That is the path I took: I
@@ -106,26 +107,48 @@ First break: pickle slice wrapped in a slice of swiss.
 Second break: If I can't sit through the commercials, I go upstairs and call it
 a night.
 
-So, what is the result if all this? Look for yourself:
+I haven't had a slice of pizza, a dish of pasta nor a bagel or piece of regular
+bread in today-May13; you do the math. How is that possible? Surprisingly
+easy. I just ask myself this: "Is this piece of food going to sustain me or
+entertain me? If the latter, then is it worth dropping dead on my wife?"
 
-| Week | Date  | Weight | Week Loss | Cumul. Loss | Weekly Avg. Loss | Notes                                 |
-|------|-------|--------|-----------|-------------|------------------|---------------------------------------|
-| 0    | 05/13 | 291    |           |             |                  |                                       |
-| 1    | 05/20 | 282    | 9         |  9          | 9.0              |                                       |
-| 2    | 05/27 | 277    | 5         | 14          | 7.0              |                                       |
-| 3    | 06/03 | 274    | 3         | 17          | 5.6              |                                       |
-| 4    | 06/10 | 267    | 7         | 24          | 6.0              |                                       |
-| 5    | 06/17 | 263    | 4         | 28          | 5.4              |                                       |
-| 6    | 06/24 | -      | -         | -           | -                | My flight back from Houston was on 6/25. Decided not to stress since I did enjoy myself a bit at the conference. Texas BBQ. |
-| 7    | 07/01 | 259    | 4         | 32          | 4.4              |                                       |
-| 8    | 07/08 | 254    | 5         | 37          | 4.5              |                                       |
-| 9    | 07/15 | 250    | 4         | 41          | 4.4              |                                       |
-| 10   | 07/22 | 243    | 7         | 48          | 4.8              |                                       |
-| 11   | 07/29 | 239    | 4         | 52          | 4.7              |                                       |
-| 12   | 08/05 | 237    | 2         | 54          | 4.5              | Veselka, Viniero's and Yankee Stadium |
-| 13   | 08/12 |        |           |             |                  |                                       |
-| 14   | 08/19 |        |           |             |                  |                                       |
-| 15   | 08/26 |        |           |             |                  |                                       |
+And the answer is always, "Of course not." Look, I ate quite my share of
+bagels, pizza, cake, cookies, etc. Was any of those items so memorable that I
+can recall it right now and say, "Wow. That ____ was delicious!"?
+
+I've had occasion to talk to a bariatric nurse and a nutritionist that just got
+her masters. Both have said that true weight loss only works with lifestyle
+change and that in order to make that change, people typically need a breaking
+point. Maybe they got winded for the upteenth time climbing the stairs, or
+can't keep up with their kids, or were the object of ridicule. In my case, it
+took my wife being sick to turn me around.
+
+And this *is* a lifestyle change. Those meals I described above are pretty much
+how I have to eat until I die. Unless I am in the presence of company, either
+in my house or at someone else's house or out at an occasion, that's how I have
+to eat. Period. Save the sweets and the carbs for parties and celebrations only.
+
+So, if you're still with me, you probably what to know what the result of all
+this walking meal watching is. Well, have a look:
+
+| Week | Date  | Weight | Week Loss | Total. Loss | Week Avg. Loss | Notes                                 |
+|------|-------|--------|-----------|-------------|----------------|---------------------------------------|
+| 0    | 05/13 | 291    |           |             |                |                                       |
+| 1    | 05/20 | 282    | 9         |  9          | 9.0            |                                       |
+| 2    | 05/27 | 277    | 5         | 14          | 7.0            |                                       |
+| 3    | 06/03 | 274    | 3         | 17          | 5.6            |                                       |
+| 4    | 06/10 | 267    | 7         | 24          | 6.0            |                                       |
+| 5    | 06/17 | 263    | 4         | 28          | 5.4            |                                       |
+| 6    | 06/24 | -      | -         | -           | -              | My flight back from Houston was on 6/25. Decided not to stress since I did enjoy myself a bit at the conference. Texas BBQ. |
+| 7    | 07/01 | 259    | 4         | 32          | 4.4            |                                       |
+| 8    | 07/08 | 254    | 5         | 37          | 4.5            |                                       |
+| 9    | 07/15 | 250    | 4         | 41          | 4.4            |                                       |
+| 10   | 07/22 | 243    | 7         | 48          | 4.8            |                                       |
+| 11   | 07/29 | 239    | 4         | 52          | 4.7            |                                       |
+| 12   | 08/05 | 237    | 2         | 54          | 4.5            | Veselka, Viniero's and Yankee Stadium |
+| 13   | 08/12 |        |           |             |                |                                       |
+| 14   | 08/19 |        |           |             |                |                                       |
+| 15   | 08/26 |        |           |             |                |                                       |
 
 I'm down from waist size 48 to 38 and shirt size from teetering on the edge of
 3XL down to an XL. I can walk long distances without strain (as long as the
@@ -135,3 +158,5 @@ as inspiration for two people I know to work on their own fitness.
 
 Most importantly - I'm much less likely to drop dead and leave my wife without
 insurance.
+
+TBC...
