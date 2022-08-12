@@ -54,10 +54,11 @@ Karen: "So, after six and a half years, you're still not allowed to have a drink
 Leo: "The problem is I don't want a drink; I want 10 drinks."
 
 And that resonated with me: My name is Matthew Persico and I am a
-["foodaholic"](https://en.wikipedia.org/wiki/Food_addiction). You see, When you want a
-cookie, you take *a* cookie; I take a half sleeve. While you get a slice of pizza, I eat
-three. You have a dish of pasta, I get a bowl, go back for seconds, and grab
-another spoonful as I am putting it into the fridge.
+["foodaholic"](https://en.wikipedia.org/wiki/Food_addiction). You see, when you
+want a cookie, you take *a* cookie; I, on the other hand, take a half
+sleeve. While you get a slice of pizza, I eat three. You have a dish of pasta,
+I get a bowl, go back for seconds, and grab another spoonful as I am putting it
+into the fridge.
 
 I get a Twinkie at the gas station every time I fill up a car. I get a Snickers
 or Payday or Baby Ruth every time I check out at the grocery store.
@@ -69,9 +70,8 @@ break, ice cream. And on, and on, and on.
 
 I do not mean to belittle anyone or minimize the issues and problems of anyone
 who has an actual medical diagnosis of addition; I am not medically qualified
-to make such diagnoses. But if you cannot control your intake of a substance
-and you do your worst consumption out of sight, that sounds to me like an
-addiction, no?
+to make such diagnoses. But if I cannot control my intake of food and I do your
+worst consumption out of sight, that sounds to me like an addiction, no?
 
 So, what do you do? You cannot stop eating, right? Of course, but look at
 alcoholism: you can still drink, just not alcohol. That is the path I took: I
@@ -80,12 +80,12 @@ eating.
 
 I settled in on:
 
-* Breakfast - One serving of cereal with skim milk, possibly fruit topped or
+* Breakfast - One serving of cereal with skim milk, possibly fruit topped, or
   two eggs (with no more than three strips of bacon on Sundays).
 
 * Lunch - Two or three slices of turkey, a slice of swiss and a 70-calorie wrap
   for lunch. Absolutely no mayo. I'll use relish, pickles, mustard even cole
-  slaw on occasion as a garnish.
+  slaw on occasion as garnishes.
 
 * Dinner - salad or steamed frozen vegetable plus whatever protein Donna
   wants - fish, chicken, steak, the occasional hamburger.
@@ -99,29 +99,30 @@ certainly not between dinner and breakfast. In order to pull of that last bit,
 I've been going to bed at the same time Donna does so that I am not downstairs
 to get tempted to nosh.
 
-Is it perfect? No. Occasionally I'll start watching Stat Trek or a Yankee
-game. The difference:
+Is it perfect? No. I tend to overeat on fruit and have more than one piece a
+day. Occasionally I'll start watching Stat Trek or a Yankee game, but now with
+a difference:
 
-First break: pickle slice wrapped in a slice of swiss.
+* First break: pickle slice wrapped in a slice of swiss.
 
-Second break: If I can't sit through the commercials, I go upstairs and call it
-a night.
+* Second break: If I can't sit through the commercials without getting up to go
+to the fridge, I go upstairs and call it a night.
 
-I haven't had a slice of pizza, a dish of pasta nor a bagel or piece of regular
-bread in today-May13; you do the math. How is that possible? Surprisingly
+I haven't had a slice of pizza, a dish of pasta, a bagel or a piece of regular
+bread in today-May13 days; you do the math. How is that possible? Surprisingly
 easy. I just ask myself this: "Is this piece of food going to sustain me or
 entertain me? If the latter, then is it worth dropping dead on my wife?"
 
-And the answer is always, "Of course not." Look, I ate quite my share of
-bagels, pizza, cake, cookies, etc. Was any of those items so memorable that I
-can recall it right now and say, "Wow. That ____ was delicious!"?
+And the answer is always, "Of course not." Look, I've eaten plenty of bagels,
+pizza, cake, cookies, etc. Was any of those items so memorable that I can
+recall it right now and say, "Wow. That ____ was delicious!"?
 
-I've had occasion to talk to a bariatric nurse and a nutritionist that just got
-her masters. Both have said that true weight loss only works with lifestyle
-change and that in order to make that change, people typically need a breaking
-point. Maybe they got winded for the upteenth time climbing the stairs, or
-can't keep up with their kids, or were the object of ridicule. In my case, it
-took my wife being sick to turn me around.
+I've had recent occasion to talk to a bariatric nurse and a nutritionist that
+just got her masters. Both have said that true weight loss only works with
+lifestyle change and that in order to make that change, people typically need a
+breaking point. Maybe they got winded for the upteenth time climbing the
+stairs, or can't keep up with their kids, or were the object of ridicule. In my
+case, it took my wife being sick to turn me around.
 
 And this *is* a lifestyle change. Those meals I described above are pretty much
 how I have to eat until I die. Unless I am in the presence of company, either
@@ -129,7 +130,7 @@ in my house or at someone else's house or out at an occasion, that's how I have
 to eat. Period. Save the sweets and the carbs for parties and celebrations only.
 
 So, if you're still with me, you probably what to know what the result of all
-this walking meal watching is. Well, have a look:
+this walking, meal watching, and blogging is. Well, have a look:
 
 | Week | Date  | Weight | Week Loss | Total. Loss | Week Avg. Loss | Notes                                 |
 |------|-------|--------|-----------|-------------|----------------|---------------------------------------|
@@ -156,7 +157,7 @@ humidity is reasonable). I feel much more comfortable, have so much more energy
 and don't loathe mirrors anymore. And, apparently, the Strava posts are serving
 as inspiration for two people I know to work on their own fitness.
 
-Most importantly - I'm much less likely to drop dead and leave my wife without
+Most importantly, I'm much less likely to drop dead and leave my wife without
 insurance.
 
 TBC...
