@@ -21,7 +21,7 @@ re-tiled. On a whim, I decided to see what the scale would say when I stepped
 on it. I'm not normally a "scale person". I judge my health by which hole on my
 belt I happen to be using this week. Now I knew I was getting up there because
 there we less and less unused holes, but I took my usual attitude of, "Yeah I
-need to do something; eventually, I'll get around to it.". Then I stepped om
+need to do something; eventually, I'll get around to it.". Then I stepped on
 the scale.
 
 291.
