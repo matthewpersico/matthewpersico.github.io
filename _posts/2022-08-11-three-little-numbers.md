@@ -45,10 +45,11 @@ I started with a simple plan - eat less, don't eat between meals and walk for
 an hour a day. As I started to work out the details of this plan, I happened to
 run into this [West Wing video](https://www.youtube.com/watch?v=XFh8PoTa-40)
 while going down a YouTube rabbit hole one night. It's the scene where Leo
-McGarry is exit-interviewing the admin who outed Leo's rehab stint for pills
-and alcohol. The relevant dialogue starts at [2:00])(https://youtu.be/XFh8PoTa-40?t=120):
+McGarry is exit-interviewing Karen Larson, the admin who outed Leo's rehab
+stint for pills and alcohol. The relevant dialogue starts at
+[2:00](https://youtu.be/XFh8PoTa-40?t=120):
 
-Admin: "So, after six and a half years, you're till not allowed to have a drink?"
+Karen: "So, after six and a half years, you're still not allowed to have a drink?"
 
 Leo: "The problem is I don't want a drink; I want 10 drinks."
 
@@ -63,7 +64,7 @@ or Payday or Baby Ruth every time I check out at the grocery store.
 
 And when my wife goes to bed at 9pm, it's showtime! Put on three hours of Star
 Trek, First commercial: the aforementioned half-sleeve of cookies. Next break,
-fruit. Next break, peanut butter an jelly sandwich. Next break, crackers. Next
+fruit. Next break, peanut butter and jelly sandwich. Next break, crackers. Next
 break, ice cream. And on, and on, and on.
 
 I do not mean to belittle anyone who has an actual medical diagnosis of
@@ -107,27 +108,27 @@ a night.
 
 So, what is the result if all this? Look for yourself:
 
-|Week|Date|Weight|Week Loss|Cumul. Loss|Weekly Avg. Loss|Notes|
-|----|----|------|---------|-----------|----------------|-----|
-|0|05/13|291|||||
-|1|05/20|282|9|9|9.0||
-|2|05/27|277|5|14|7.0||
-|3|06/03|274|3|17|5.6||
-|4|06/10|267|7|24|6.0||
-|5|06/17|263|4|28|5.4||
-|6|06/24||||||My flight back from Houston was on 6/25. Decided not to stress since I did enjoy myself a bit at the conference. Texas BBQ.|
-|7|07/01|259|4|32|4.4||
-|8|07/08|254|5|37|4.5||
-|9|07/15|250|4|41|4.4||
-|10|07/22|243|7|48|4.8||
-|11|07/29|239|4|52|4.7||
-|12|08/05|237|2|54|4.5|Veselka, Viniero's and Yankee Stadium|
-|13|08/12|||||
-|14|08/19|||||
-|15|08/26|||||
+| Week | Date  | Weight | Week Loss | Cumul. Loss | Weekly Avg. Loss | Notes                                 |
+|------|-------|--------|-----------|-------------|------------------|---------------------------------------|
+| 0    | 05/13 | 291    |           |             |                  |                                       |
+| 1    | 05/20 | 282    | 9         |  9          | 9.0              |                                       |
+| 2    | 05/27 | 277    | 5         | 14          | 7.0              |                                       |
+| 3    | 06/03 | 274    | 3         | 17          | 5.6              |                                       |
+| 4    | 06/10 | 267    | 7         | 24          | 6.0              |                                       |
+| 5    | 06/17 | 263    | 4         | 28          | 5.4              |                                       |
+| 6    | 06/24 | -      | -         | -           | -                | My flight back from Houston was on 6/25. Decided not to stress since I did enjoy myself a bit at the conference. Texas BBQ. |
+| 7    | 07/01 | 259    | 4         | 32          | 4.4              |                                       |
+| 8    | 07/08 | 254    | 5         | 37          | 4.5              |                                       |
+| 9    | 07/15 | 250    | 4         | 41          | 4.4              |                                       |
+| 10   | 07/22 | 243    | 7         | 48          | 4.8              |                                       |
+| 11   | 07/29 | 239    | 4         | 52          | 4.7              |                                       |
+| 12   | 08/05 | 237    | 2         | 54          | 4.5              | Veselka, Viniero's and Yankee Stadium |
+| 13   | 08/12 |        |           |             |                  |                                       |
+| 14   | 08/19 |        |           |             |                  |                                       |
+| 15   | 08/26 |        |           |             |                  |                                       |
 
 I'm down from waist size 48 to 38 and shirt size from teetering on the edge of
-3xl down to an xl. I can walk long distances without strain (as long as the
+3XL down to an XL. I can walk long distances without strain (as long as the
 humidity is reasonable). I feel much more comfortable, have so much more energy
 and don't loathe mirrors anymore. And, apparently, the Strava posts are serving
 as inspiration for two people I know to work on their own fitness.
