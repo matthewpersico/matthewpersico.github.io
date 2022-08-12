@@ -2,9 +2,9 @@
 topic: Food
 ---
 If you follow me on [Facebook](https://www.facebook.com/matthew.persico) you may
-be wondering what's up with all the
+be wondering, "What's up with all the
 [Strava](https://www.facebook.com/1538859698/posts/pfbid0pG3fRH6v1oDaV4xmRATfz8WusqQHhRxSMS5jwdp2tB42BNi1LzUEZ2DK9nD7dfRsl/?d=n)
-posts? Well, it all comes down to three little numbers.
+posts?" Well, it all comes down to three little numbers.
 
 2
 
