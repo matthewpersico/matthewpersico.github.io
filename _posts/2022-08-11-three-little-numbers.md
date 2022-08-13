@@ -162,4 +162,4 @@ So in the end, why am I writing? Because I am happy. Happy that I am
 healthier. Happy that I am no longer self conscious of pictures. Happy that I
 can look good. Why not share happiness with friends?
 
-[Prev](2016-08-24-falling-off-the-wagon...and-getting-back-on-board)
+[Prev](../../../2016/08/24/2016-08-24-falling-off-the-wagon...and-getting-back-on-board)
