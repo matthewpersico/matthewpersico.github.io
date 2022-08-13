@@ -133,7 +133,7 @@ So, if you're still with me, you probably what to know what the result of all
 this walking, meal watching, and blogging is. Well, have a look:
 
 | Week | Date  | Weight | Week Loss | Total. Loss | Week Avg. Loss | Notes                                 |
-|------|-------|--------|-----------|-------------|----------------|---------------------------------------|
+|-----:|-------|:------:|----------:|------------:|---------------:|---------------------------------------|
 | 0    | 05/13 | 291    |           |             |                |                                       |
 | 1    | 05/20 | 282    | 9         |  9          | 9.0            |                                       |
 | 2    | 05/27 | 277    | 5         | 14          | 7.0            |                                       |
@@ -147,9 +147,7 @@ this walking, meal watching, and blogging is. Well, have a look:
 | 10   | 07/22 | 243    | 7         | 48          | 4.8            |                                       |
 | 11   | 07/29 | 239    | 4         | 52          | 4.7            |                                       |
 | 12   | 08/05 | 237    | 2         | 54          | 4.5            | Veselka, Viniero's and Yankee Stadium |
-| 13   | 08/12 |        |           |             |                |                                       |
-| 14   | 08/19 |        |           |             |                |                                       |
-| 15   | 08/26 |        |           |             |                |                                       |
+| 13   | 08/12 | 234    | 3         | 57          | 4.4            | Three days of no walks due to weather, summer cold, 25 North Mac & Meat |
 
 I'm down from waist size 48 to 38 and shirt size from teetering on the edge of
 3XL down to an XL. I can walk long distances without strain (as long as the
@@ -160,4 +158,8 @@ as inspiration for two people I know to work on their own fitness.
 Most importantly, I'm much less likely to drop dead and leave my wife without
 insurance.
 
-TBC...
+So in the end, why am I writing? Because I am happy. Happy that I am
+healthier. Happy that I am no longer self conscious of pictures. Happy that I
+can look good. Why not share happiness with friends?
+
+[Prev](2016-08-24-falling-off-the-wagon...and-getting-back-on-board)
