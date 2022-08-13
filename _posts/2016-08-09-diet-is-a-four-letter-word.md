@@ -15,7 +15,6 @@ Now, for those of you who know me, you know I have no head for all the kumbaya, 
 
 Week 3? What the hell (FLW, but not Dirty Word) am I supposed to do until then? Count calories? Actually put down on record what kind of crap (FLW, also not a Dirty Word) I eat? Well, I guess if I'm going to go to meet the dietician, I can't go empty handed.
 
-
 And so, with the help of a FitBit app that was foisted upon me in March by Bloomberg, and which I used for exactly two days before I gave up on it as being too tedious (laziness rears it’s ugly head again), I started to count calories. And that’s when the magic happened.
 
 First of all, giving a geek a new app is like giving a three-year-old a drum at Christmas - it’s the only thing they’ll play with. I found that the lookup-by-name facility was really good. I found that the phone was tracking my steps and feeding it to the app; wow, I walk that far? And then I found the bar code scanner. OOOOOOOOH! I could type less.
@@ -31,5 +30,3 @@ Now, it helps if you're OCD/fanatical about counting EVERY SINGLE THING YOU EAT.
 And you must be honest with yourself, Not counting that cake because it's Saturday is a nice joke, but it's not going to get you back into your favorite jeans any sooner.
 
 So, if you are looking in the mirror and you are not happy with the shape that you see, don't diet. Start counting.
-
-[up](..) [home](../..)
