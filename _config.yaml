@@ -1,1 +1,27 @@
-theme: minima
+collections:
+  topics:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "topics"
+    values:
+      layout: "topic"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+remote_theme: pages-themes/minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme
