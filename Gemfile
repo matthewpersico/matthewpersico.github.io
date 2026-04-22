@@ -2,15 +2,11 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+gem "github-pages", group: :jekyll_plugins
 
-# gem "rails"
-
-gem "jekyll", "~> 4.2"
-gem "jekyll-theme-midnight"
 group :jekyll_plugins do
-  gem "github-pages"
-  gem 'jekyll-sitemap'
-  gem 'jekyll-feed'
-  gem 'jekyll-seo-tag'
+  gem "jekyll-remote-theme"
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
 end

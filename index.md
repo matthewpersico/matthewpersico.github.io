@@ -8,7 +8,7 @@ find it as interesting as I do.
 
 # Who Am I?
 
-Husband, father, computer professional. You can find me on
+Widow, father, computer professional. You can find me on
 [Facebook](https://www.facebook.com/matthew.persico),
-[Twitter](https://twitter.com/MatthewOPersico) and
+[X (Twitter)](https://x.com/MatthewOPersico) and
 [LinkedIn](www.linkedin.com/in/matthewpersico).
