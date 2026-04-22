@@ -18,11 +18,10 @@ defaults:
     values:
       layout: "default"
 
-remote_theme: pages-themes/minima
+remote_theme: pages-themes/minima@v2.5.2
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-remote-theme
-  
