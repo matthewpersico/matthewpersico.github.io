@@ -5,9 +5,7 @@ This article was originally published in The Perl Journal in January of 2003. Th
 
 The original website for The Perl Journal no longer exists. An archive of this article can be found on a personal site that seems to be hosting the old [Dr. Dobbs](https://jacobfilipp.com/DrDobbs/articles/TPJ/2003/0301/0301a/0301a.htm) site. Since that seems rather tenuous to me, I took that text and have now rehosted the article here.
 
-# Juggling Perl Versions
-
-_The Perl Journal_ January 2003
+### The Perl Journal January 2003
 
 ### By Matthew O. Persico
 
