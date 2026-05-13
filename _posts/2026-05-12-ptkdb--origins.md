@@ -1,6 +1,8 @@
 ---
 topic: Tech
 title: My Journey with Devel::ptkdb - Origins
+tags: [Perl, debug, gui, visual, Devel::ptkdb]
+layout: post
 ---
 This post explains the beginnings of my involvement with the Perl Tk debugger.
 
