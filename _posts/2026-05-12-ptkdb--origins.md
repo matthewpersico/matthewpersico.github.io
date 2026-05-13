@@ -28,7 +28,7 @@ My next job was at a Java shop where I naturally learned how to use the Java deb
 
 So now I had a chance to go back and work with Perl, and by extension, `Devel::ptkdb`. Once I had made my changes, I stepped through the program in the debugger in order to check them. Along the way, I set breakpoints and added variables in the variable display. `Devel::ptkdb` allows you to save the breakpoints and the variable list in a `.ptkdb` state file, which I did.
 
-Imagine my surprise when I started up the program again in the debugger and my saved state was not loaded. I scratched my head for about 10 seconds and realized, "Ah, I'm on a read-only partition and the default location of the state file is the directory where the Perl script lives. That location is a read-only file system. Let me save the state file in my home directory." [^1](#Footnote_1)
+Imagine my surprise when I started up the program again in the debugger and my saved state was not loaded. I scratched my head for about 10 seconds and realized, "Ah, I'm on a read-only partition and the default location of the state file is the directory where the Perl script lives. That location is a read-only file system. Let me save the state file in my home directory." [1](#Footnote-1)
 
 Imagine my surprise when I started up the program again and my saved state did not reappear again. I scratched my head for a bit more than 10 seconds. I tried it again. It was still not saved. After about half a day of having to reset variables and breakpoints every time I ran the program, I decided that it was high time I took a look at the debugger code. I figured that it had to be something simple, related to just the input box for the name of the state file; it was not even a proper file dialog. I was sure I could handle that.
 
@@ -46,4 +46,6 @@ And that's where they stayed. Over the years, I had occasion to use the debugger
 
 Well, now I have the 'tuits. I'm currently unemployed and I have committed to making a presentation at the next [Perl and Raku Conference](https://tprc.us/tprc-2026-gsp/) about the debugger. It's time to roll up my sleeves, dig in and see if I cannot recreate what I did over ten years ago.
 
-<a id="Footnote_1"></a>Which, all these years later begs the question, "If the file system was read only, how did you update the script you were supposed to be changing?" Let's not let details get in the way of a good story, shall we?
+##### Footnotes
+1. <a id="Footnote-1"></a>
+Which, all these years later begs the question, "If the file system was read only, how did you update the script you were supposed to be changing?" Let's not let details get in the way of a good story, shall we?
