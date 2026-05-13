@@ -1,5 +1,6 @@
 ---
 topic: Tech
+tags: [Perl, versions]
 ---
 This article was originally published in The Perl Journal in January of 2003. The first releases of [plenv](https://github.com/tokuhirom/plenv) and [perlbrew](https://metacpan.org/pod/App::perlbrew) appear to be in 2013 and 2010 respectively. Please, keep that in mind as you read.
 
