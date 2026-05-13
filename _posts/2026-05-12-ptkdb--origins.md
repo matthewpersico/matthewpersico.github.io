@@ -1,9 +1,10 @@
 ---
 topic: Tech
+title: My Journey with Devel::ptkdb - Origins
 ---
-# My Journey with Devel::ptkdb
+This post explains the beginnings of my involvement with the Perl Tk debugger.
 
-## Origins
+### Origins
 
 There are a number of well-known schisms in the world of computing:
 - Emacs vs Vi
