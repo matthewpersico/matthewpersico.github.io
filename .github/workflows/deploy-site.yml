@@ -32,7 +32,7 @@ jobs:
           baseurl: ""
           "@ | Set-Content -Path /tmp/_config_deploy.yml
 
-          bundle exec jekyll build --config _config.yml,/tmp/_config_deploy.yml
+          bundle exec jekyll build --config _config.yaml,/tmp/_config_deploy.yml
 
       # Preserve any PR preview directories that already live on gh-pages so
       # that a main-site redeploy does not wipe them out.
