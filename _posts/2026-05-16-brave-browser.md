@@ -40,7 +40,9 @@ Chrome uses Google infrastructure (log in with your Google credentials) and Edge
 
 There is an explicit "Sync" section in the Brave Settings. On the first platform where you install Brave, you establish a new 'sync chain' and pick which pieces of data to sync with other platforms.
 
-On subsequent platforms, you go to the same "sync" section, but chose to connect to an existing sync chain. On your original platform you chose to View Sync Code. It can be either a ![QR code]({{"/assets/images/2026-05-16-brave-browser/qr.jpg" | relative_url }}) that your phone or camera can scan to sync up or you can use a string of ![25 words]({{"/assets/images/2026-05-16-brave-browser/text.jpg" | relative_url }}) to enter on your new computer to allow permissions to sync.
+On subsequent platforms, you go to the same "sync" section, but chose to connect to an existing sync chain. On your original platform you chose to View Sync Code. It can be either a QR code that your phone or camera can scan to sync up: ![QR code]({{"/assets/images/2026-05-16-brave-browser/qr.jpg" | relative_url }})
+
+or you can use a string of 25 words to enter on your new computer to allow permissions to sync: ![25 words]({{"/assets/images/2026-05-16-brave-browser/text.jpg" | relative_url }})
 
 Figure 1 shows my sync device list:
 
