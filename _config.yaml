@@ -25,3 +25,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-remote-theme
+
+repository: matthewpersico/matthewpersico.github.io
