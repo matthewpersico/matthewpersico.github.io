@@ -31,7 +31,7 @@ jobs:
         run: |
           # Override baseurl for the preview path
           @"
-          url: "https://your-domain.com"
+          url: "https://matthewpersico.github.io"
           baseurl: "/previews/pr-${{ github.event.pull_request.number }}"
           "@ | Set-Content -Path /tmp/_config_preview.yml
 
@@ -51,7 +51,7 @@ jobs:
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const previewUrl = `https://your-domain.com/previews/pr-${prNumber}/`;
+            const previewUrl = `https://matthewpersico.github.io/previews/pr-${prNumber}/`;
             const marker = '';
             const body =
               `${marker}\n` +
