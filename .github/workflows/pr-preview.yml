@@ -1,0 +1,49 @@
+name: PR preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-and-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      # Same build setup as production – keep these in sync
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build preview site
+        run: |
+          bundle exec jekyll build -d _site_preview
+
+      - name: Deploy preview to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site_preview
+          publish_branch: gh-pages
+          # Put previews under /previews/pr-<number>/
+          destination_dir: previews/pr-${{ github.event.pull_request.number }}
+          keep_files: true
+          commit_message: "Deploy preview for PR #${{ github.event.pull_request.number }}"
+
+      - name: Comment preview URL on PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          header: preview-url
+          message: |
+            ✅ Preview deployed for this PR.
+
+            URL: [blog.matthewpersico.com](https://blog.matthewpersico.com/previews/pr-${{) github.event.pull_request.number }}/
