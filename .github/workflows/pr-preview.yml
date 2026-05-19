@@ -46,4 +46,4 @@ jobs:
           message: |
             ✅ Preview deployed for this PR.
 
-            URL: [blog.matthewpersico.com](https://blog.matthewpersico.com/previews/pr-${{) github.event.pull_request.number }}/
+            URL: [blog.matthewpersico.com](https://blog.matthewpersico.com/previews/pr-${{ github.event.pull_request.number }}/)
