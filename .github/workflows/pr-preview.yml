@@ -31,11 +31,11 @@ jobs:
         run: |
           # Override baseurl for the preview path
           @"
-          url: "https://matthewpersico.github.io"
+          url: "https://blog.matthewpersico.com"
           baseurl: "/previews/pr-${{ github.event.pull_request.number }}"
           "@ | Set-Content -Path /tmp/_config_preview.yml
 
-          bundle exec jekyll build --config _config.yaml,/tmp/_config_preview.yml --destination ./_site_preview
+          bundle exec jekyll build --config _config.yml,/tmp/_config_preview.yml --destination ./_site_preview
 
       - name: Deploy preview to gh-pages branch previews subdirectory
         uses: peaceiris/actions-gh-pages@v4
@@ -51,7 +51,7 @@ jobs:
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const previewUrl = `https://${context.repo.owner}.github.io/${context.repo.repo}/previews/pr-${prNumber}/`;
+            const previewUrl = `https://blog.matthewpersico.com/previews/pr-${prNumber}/`;
             const marker = '';
             const body =
               `${marker}\n` +
