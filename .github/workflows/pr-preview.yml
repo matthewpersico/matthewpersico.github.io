@@ -25,7 +25,7 @@ jobs:
 
       - name: Build preview site
         run: |
-          bundle exec jekyll build -d _site_preview
+          bundle exec jekyll build --config _config.yml,/tmp/_config_preview.yml -d _site_preview
 
       - name: Deploy preview to gh-pages
         uses: peaceiris/actions-gh-pages@v4
