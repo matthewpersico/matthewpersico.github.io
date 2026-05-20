@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-05-20T01:18:10+00:00</updated><id>/feed.xml</id><title type="html">matthewpersico.github.io</title><subtitle>Matthew Persico&apos;s Blog and Reference Site</subtitle><entry><title type="html">Being Brave</title><link href="/2026/05/16/brave-browser.html" rel="alternate" type="text/html" title="Being Brave" /><published>2026-05-16T00:00:00+00:00</published><updated>2026-05-16T00:00:00+00:00</updated><id>/2026/05/16/brave-browser</id><content type="html" xml:base="/2026/05/16/brave-browser.html"><![CDATA[<p>I spent a good portion of my day changing browsers.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-05-20T01:20:56+00:00</updated><id>/feed.xml</id><title type="html">matthewpersico.github.io</title><subtitle>Matthew Persico&apos;s Blog and Reference Site</subtitle><entry><title type="html">Being Brave</title><link href="/2026/05/16/brave-browser.html" rel="alternate" type="text/html" title="Being Brave" /><published>2026-05-16T00:00:00+00:00</published><updated>2026-05-16T00:00:00+00:00</updated><id>/2026/05/16/brave-browser</id><content type="html" xml:base="/2026/05/16/brave-browser.html"><![CDATA[<p>I spent a good portion of my day changing browsers.</p>
 
 <h3 id="the-problem">The Problem</h3>
 <p>Like many people, I used Chrome for a long time. When it first came out, it fast, it was responsive, and it wasn’t Internet Explorer. As time passed, it felt as though Chrome was getting less and less responsive and so, when Microsoft released its Chromium rewrite of Edge in January of 2020, I tried it.</p>
@@ -56,7 +56,13 @@
 
 <p>There is an explicit “Sync” section in the Brave Settings. On the first platform where you install Brave, you establish a new ‘sync chain’ and pick which pieces of data to sync with other platforms.</p>
 
-<p>On subsequent platforms, you go to the same “sync” section, but chose to connect to an existing sync chain. On your original platform you chose to View Sync Code. It can be either a <img src="/assets/images/2026-05-16-brave-browser/qr.jpg" alt="QR code" /> that your phone or camera can scan to sync up or you can use a string of <img src="/assets/images/2026-05-16-brave-browser/text.jpg" alt="25 words" /> to enter on your new computer to allow permissions to sync.</p>
+<p>On subsequent platforms, you go to the same “sync” section, but chose to connect to an existing sync chain. On your original platform you chose to View Sync Code. It can be either a QR Code that your phone or camera can scan to sync up:</p>
+
+<p><img src="/assets/images/2026-05-16-brave-browser/qr.jpg" alt="QR code" /></p>
+
+<p>or you can use a string of 25 words to enter on your new computer to allow permissions to sync.</p>
+
+<p><img src="/assets/images/2026-05-16-brave-browser/text.jpg" alt="25 words" /></p>
 
 <p>Figure 1 shows my sync device list:</p>
 
